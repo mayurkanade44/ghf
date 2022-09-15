@@ -332,13 +332,16 @@ header .logo img {
 header .header-top {
   background-color: #fff;
   border-bottom: 1px solid #d3d7cea6;
-  padding: 7px;
+  padding: 7px 7px 3px 7px;
 }
 header .header-top .col-det .ulleft li {
   float: left;
   padding: 12px;
   color: #686968;
   font-size: 0.9rem;
+}
+.follow-li {
+  padding-top: 12px !important;
 }
 header .header-top .col-det .ulleft li i {
   margin-right: 5px;
@@ -349,6 +352,10 @@ header .header-top .col-det .ulleft li span {
 }
 header .header-top .col-det .ulright {
   float: right;
+}
+.ulleft img,
+.ulright img {
+  width: 23px;
 }
 header .header-top .col-det .ulright li {
   float: left;
@@ -361,9 +368,11 @@ header .header-top .col-det .ulright li i {
   margin-right: 5px;
   color: #8c8a8a;
 }
-header .header-top .col-det .ulright li small {
+header .header-top .col-det .ulright li small,
+header .header-top .col-det .ulleft li small {
   color: #8c8a8a;
   font-weight: 600;
+  font-size: 16px;
 }
 header .header-top .col-det .ulright li span {
   margin-left: 15px;
