@@ -322,9 +322,9 @@ header {
   width: 100%;
   z-index: 99;
 }
-header .logo {
+/* header .logo {
   padding-top: 6px;
-}
+} */
 header .logo img {
   height: 70px;
   width: 100px;
@@ -419,6 +419,13 @@ header .nav-col .navbad li {
     width: 100%;
     padding: 10px;
   }
+  header .logo img {
+    height: 60px;
+    width: 70px;
+  }
+  .container {
+    padding: 0px 15px;
+  }
 }
 header .nav-col .navbad li a {
   color: #686968 !important;
@@ -481,12 +488,12 @@ header .small-menu {
 @media screen and (max-width: 1050px) {
   .slider-captions {
     bottom: 100px !important;
+    width: 90%;
+    text-align: center;
+    float: none;
+    margin: auto;
   }
 
-  width: 90%;
-  text-align: center;
-  float: none;
-  margin: auto;
   .slider-captions .slider-title {
     font-size: 42px;
   }
@@ -503,6 +510,26 @@ header .small-menu {
 @media screen and (max-width: 572px) {
   .slider-captions {
     display: none;
+  }
+  .slider-img img {
+    height: 250px;
+  }
+
+  .slider .owl-nav .owl-prev,
+  .slider .owl-nav .owl-next {
+    color: #fff;
+    display: inline-block;
+    zoom: 1;
+    margin: 5px;
+    padding: 3px 6px !important;
+    font-size: 22px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    background: transparent;
+    filter: Alpha(Opacity=50);
+    line-height: 1;
+    border: 2px solid #fff !important;
   }
 }
 .slider-title {
@@ -677,8 +704,8 @@ header .small-menu {
 
 /* ===================================== Events Home CSS ================================== */
 .events {
-  background-color: #efefef2e;
-  padding: 50px;
+  background-color: #edf1f5;
+  padding: 30px;
 }
 
 @media screen and (max-width: 940px) {
@@ -748,7 +775,7 @@ header .small-menu {
 
 .doctor-message .inner-lay {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 50px;
+  padding: 30px;
   color: #fff;
 }
 
@@ -772,8 +799,8 @@ header .small-menu {
 
 /* ===================================== Our Blog CSS ================================== */
 .our-blog {
-  background-color: #fdfdfd;
-  padding: 40px;
+  background-color: #edf1f5;
+  padding: 20px 30px;
 }
 
 @media screen and (max-width: 967px) {
@@ -824,7 +851,7 @@ header .small-menu {
 }
 
 /* ===================================== Fooer CSS ================================== */
-.footer {
+/* .footer {
   padding: 50px;
   padding-bottom: 50px;
   background-color: #1e2436;
@@ -911,10 +938,308 @@ header .small-menu {
 .kf-2 .single-key {
   box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35),
     0 0px 3px 0 rgba(206, 206, 238, 0.35);
+} */
+
+footer {
+  position: relative;
+  padding: 50px 0px 0px;
+  background: #212121;
+}
+@media screen and (max-width: 767.98px) {
+  footer {
+    padding: 20px 0 0;
+  }
+}
+footer .copy-right {
+  padding: 20px 0px;
+  border-top: solid 1px #dfdfdf;
+  font-size: 14px;
+  color: #84878a;
+  text-align: center;
+}
+footer .copy-right p a {
+  color: #fd580b;
+  padding-left: 10px;
+  font-weight: bold;
+}
+footer .footer-content {
+  margin: 20px 0px;
+  display: block;
+  width: 100%;
+  color: #84878a;
+}
+footer .footer-content p {
+  font-size: 16px;
+  padding: 10px 0px;
+  line-height: 27px;
+  margin: 0px;
+}
+footer .footer-content ul li {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: #fd580b;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 5px 3px 0px 0px;
+}
+footer .footer-content ol li {
+  padding: 10px 0px;
+  position: relative;
+}
+footer .footer-content ol li a {
+  color: #84878a;
+  font-size: 16px;
+}
+footer .footer-content ol li a i {
+  padding-right: 10px;
+  color: #fd580b;
+}
+footer .footer-content h2 {
+  font-size: 20px;
+  position: relative;
+  padding: 5px 0px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .footer-content .form-group {
+  position: relative;
+}
+footer .footer-content .form-group .form-control {
+  height: 40px;
+  padding-right: 40px;
+  text-overflow: ellipsis;
+}
+footer .footer-content .form-group i {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #fd580b;
+  text-align: center;
+  top: 0;
+  right: 0;
+}
+
+.bg-0-b {
+  padding: 50px 0px;
+  position: relative;
+  background: #e8f0f5;
+  z-index: 2;
+}
+.bg-0-b .main-card-contact {
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 0px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 9;
+}
+.bg-0-b .main-card-contact .sup-card-contact {
+  width: 40%;
+  max-width: 40%;
+  flex: 1 1 40%;
+}
+@media screen and (max-width: 767.98px) {
+  .bg-0-b .main-card-contact .sup-card-contact {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+.bg-0-b .main-card-contact .sup-card-contact .contact-title {
+  position: relative;
+}
+.bg-0-b .main-card-contact .sup-card-contact .contact-title h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: #222;
+  padding-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
+.bg-0-b .main-card-contact .sup-card-contact .contact-title h2::before {
+  position: absolute;
+  content: "";
+  background: #fd580b;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+}
+.bg-0-b .main-card-contact .sup-card-contact .contact-title ol li {
+  display: block;
+  padding: 10px 0px;
+  color: #606060;
+  font-size: 16px;
+  font-weight: 600;
+}
+.bg-0-b .main-card-contact .sup-card-contact .contact-title ol li i {
+  color: #fd580b;
+  padding-right: 15px;
+}
+.bg-0-b .main-card-contact .sup-card-contact .head-content {
+  position: relative;
+  display: block;
+}
+.bg-0-b .main-card-contact .sup-card-contact .head-content h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: #222;
+  padding-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
+.bg-0-b .main-card-contact .sup-card-contact .head-content h2::before {
+  position: absolute;
+  content: "";
+  background: #fd580b;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+}
+.bg-0-b .main-card-contact .sup-card-contact .head-content p {
+  font-size: 16px;
+  line-height: 27px;
+  display: block;
+  padding: 20px 0px;
+  margin: 0px;
+}
+.bg-0-b .main-card-contact .sup-card-contact-0a {
+  width: 60%;
+  max-width: 60%;
+  flex: 1 1 60%;
+}
+@media screen and (max-width: 767.98px) {
+  .bg-0-b .main-card-contact .sup-card-contact-0a {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+.bg-0-b .main-card-contact .sup-card-contact-0a .dived {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.bg-0-b .main-card-contact .sup-card-contact-0a .dived .ca-ool {
+  padding: 0px 10px;
+}
+.bg-0-b .main-card-contact .sup-card-contact-0a .dived .form-group {
+  width: 50%;
+  max-width: 50%;
+  flex: 1 1 50%;
+}
+.bg-0-b .main-card-contact .sup-card-contact-0a .dived .form-group .form-sup {
+  margin: 10px;
+  position: relative;
+}
+.bg-0-b
+  .main-card-contact
+  .sup-card-contact-0a
+  .dived
+  .form-group
+  .form-sup
+  .cal-01 {
+  position: relative;
+}
+.bg-0-b .main-card-contact .sup-card-contact-0a .dived .form-group .form-sup i {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 45px;
+  width: 45px;
+  background: #fd580b;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.bg-0-b
+  .main-card-contact
+  .sup-card-contact-0a
+  .dived
+  .form-group
+  .form-sup
+  label {
+  font-size: 15px;
+  color: #6e6e6e;
+}
+.bg-0-b
+  .main-card-contact
+  .sup-card-contact-0a
+  .dived
+  .form-group
+  .form-sup
+  label
+  span {
+  position: relative;
+  top: 4px;
+  left: 5px;
+  color: #fd580b;
+}
+.bg-0-b
+  .main-card-contact
+  .sup-card-contact-0a
+  .dived
+  .form-group
+  .form-control {
+  padding: 10px 15px;
+  margin: 30px 0px;
+  height: 45px;
+  position: relative;
+}
+
+.abt-01 {
+  padding: 3.125rem 0;
+  background: #fd580b;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+.abt-01::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  height: 9.375rem;
+  width: 9.375rem;
+  top: 0%;
+  left: 48%;
+  z-index: 1;
+  opacity: 0.1;
+  transform: translate3d(-23%, 17%, 0) rotate(-54deg);
+}
+.abt-01 .heading-wrapper {
+  position: relative;
+  margin: 1.25rem 0;
+  display: block;
+  text-align: center;
+  z-index: 8;
+}
+.abt-01 .heading-wrapper h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.625rem;
+  text-transform: uppercase;
+}
+.abt-01 .heading-wrapper ol li {
+  display: inline-block;
+  font-size: 1rem;
+  color: #ddd;
+}
+.abt-01 .heading-wrapper ol li:nth-child(2) {
+  color: #fff;
+}
+.abt-01 .heading-wrapper ol li i {
+  margin: 0 0.625rem;
+  color: #ddd;
 }
 
 /* ===================================== Our Team Starts Here ===================================== */
-.our-team {
+/* .our-team {
   padding: 50px;
   background-color: #cccccc1c;
 }
@@ -965,6 +1290,151 @@ header .small-menu {
   margin-top: 7px;
   float: right;
   border-radius: 50px;
+} */
+
+.bg-04 {
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+.bg-04 .main-team-card {
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  position: relative;
+  transition: 0.5s;
+}
+.bg-04 .main-team-card .team-setup {
+  margin: 0px;
+  padding: 10px;
+  flex: 1 1 25%;
+  width: 25%;
+  max-width: 25%;
+}
+@media screen and (max-width: 375px) {
+  .bg-04 .main-team-card .team-setup {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+    -webkit-flex-direction: 1 1 100%;
+    -moz-flex-direction: 1 1 100%;
+    -ms-flex-direction: 1 1 100%;
+  }
+}
+@media (min-width: 376px) and (max-width: 767.98px) {
+  .bg-04 .main-team-card .team-setup {
+    width: 50%;
+    max-width: 50%;
+    flex: 1 1 50%;
+    -webkit-flex-direction: 1 1 50%;
+    -moz-flex-direction: 1 1 50%;
+    -ms-flex-direction: 1 1 50%;
+  }
+}
+.bg-04 .main-team-card .team-setup .team-items {
+  width: 100%;
+  display: block;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
+  transition: 0.5s;
+  position: relative;
+}
+.bg-04 .main-team-card .team-setup .team-items:hover .team-user-social {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  display: block;
+}
+.bg-04 .main-team-card .team-setup .team-items:hover .team-user::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-name {
+  padding: 5px 0px;
+  position: relative;
+  display: block;
+  text-align: center;
+  z-index: 2;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  top: -10px;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  left: 47%;
+  z-index: 1;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-name h2 {
+  font-size: 18px;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-name b {
+  font-size: 15px;
+  color: #848484;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-user {
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-user::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.7);
+}
+.bg-04 .main-team-card .team-setup .team-items .team-user-social {
+  position: absolute;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding: 5px 0px;
+  top: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-04 .main-team-card .team-setup .team-items .team-user-social {
+    top: 40%;
+  }
+}
+.bg-04 .main-team-card .team-setup .team-items .team-user-social ol li {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  transition: 0.6s;
+  height: 30px;
+  width: 30px;
+  background: #fd580b;
+  line-height: 30px;
+  text-align: center;
+  padding: 0px;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-user-social ol li:hover {
+  color: #fd580b;
+  transform: translateX(-5px);
 }
 
 /* ===================================== Gallery Style  ================================== */
