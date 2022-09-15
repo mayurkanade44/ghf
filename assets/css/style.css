@@ -461,6 +461,13 @@ header .small-menu {
   .navbar {
     padding: 0px;
   }
+  header .header-top .col-det .ulleft li small {
+    color: #8c8a8a;
+    font-size: 13px;
+  }
+  .ulleft img {
+    width: 20px;
+  }
 }
 
 .navbar-toggler {
@@ -987,12 +994,9 @@ footer .footer-content ul li {
   display: inline-block;
   height: 30px;
   width: 30px;
-  background: #fd580b;
-  color: #fff;
   line-height: 30px;
   text-align: center;
-  border-radius: 50%;
-  margin: 5px 3px 0px 0px;
+  margin: 5px 10px 0px 0px;
 }
 footer .footer-content ol li {
   padding: 10px 0px;
@@ -1039,7 +1043,8 @@ footer .footer-content .form-group i {
     max-width: 100%;
     flex: 1 1 100%;
   }
-  .footer-content ul {
+  .footer-content ul,
+  .footer-content h2 {
     text-align: center !important;
   }
 }
@@ -1320,6 +1325,9 @@ footer .footer-content .form-group i {
   position: relative;
   overflow: hidden;
   background-color: #fff;
+}
+.about-us-page {
+  background-color: #edf1f5;
 }
 .bg-04 .main-team-card {
   flex-wrap: wrap;
