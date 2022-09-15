@@ -1024,7 +1024,18 @@ footer .footer-content .form-group i {
   right: 0;
 }
 
-.bg-0-b {
+@media screen and (max-width: 767.98px) {
+  .bg-0-b .main-card-contact .sup-card-contact {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .footer-content ul {
+    text-align: center !important;
+  }
+}
+
+/* .bg-0-b {
   padding: 50px 0px;
   position: relative;
   background: #e8f0f5;
@@ -1048,6 +1059,9 @@ footer .footer-content .form-group i {
     width: 100%;
     max-width: 100%;
     flex: 1 1 100%;
+  }
+  .footer-content ul {
+    text-align: center !important;
   }
 }
 .bg-0-b .main-card-contact .sup-card-contact .contact-title {
@@ -1236,7 +1250,7 @@ footer .footer-content .form-group i {
 .abt-01 .heading-wrapper ol li i {
   margin: 0 0.625rem;
   color: #ddd;
-}
+} */
 
 /* ===================================== Our Team Starts Here ===================================== */
 /* .our-team {
