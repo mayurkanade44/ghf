@@ -377,7 +377,7 @@ header .header-top .col-det .ulright li span {
 }
 header .header-top .btn-bhed {
   padding-top: 7px;
-  text-align: right;
+  text-align: center;
 }
 header .header-top .btn-bhed .btn {
   padding: 5px 23px;
@@ -423,6 +423,9 @@ header .nav-col .navbad li {
   header .logo {
     margin-right: 20px !important;
   }
+  .follows {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 991px) {
   header .nav-col .navbad li {
@@ -463,6 +466,10 @@ header .small-menu {
   .navbar {
     padding: 0px;
   }
+  .cont {
+    display: flex;
+    justify-content: space-around !important;
+  }
   header .header-top .col-det .ulleft li {
     padding-top: 2px;
     padding-bottom: 2px;
@@ -486,6 +493,9 @@ header .small-menu {
     border-radius: 50px;
     margin-left: 1px;
     font-size: 12px;
+  }
+  .follows {
+    display: none !important;
   }
 }
 
