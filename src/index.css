@@ -603,7 +603,6 @@ header .nav-link:hover {
   padding: 30px;
 }
 
-
 .events .event-ro .event-box {
   text-align: center;
   margin-bottom: 20px;
@@ -630,7 +629,7 @@ header .nav-link:hover {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .events {
     padding: 15px 10px;
   }
@@ -651,7 +650,7 @@ header .nav-link:hover {
 .mission-vision .vision {
   padding: 50px;
 }
-@media screen and (max-width: 940px) {
+@media (max-width: 940px) {
   .mission-vision .vision {
     padding: 0px 10px 25px;
   }
@@ -676,11 +675,6 @@ header .nav-link:hover {
   color: #fff;
 }
 
-@media screen and (max-width: 940px) {
-  .doctor-message .inner-lay {
-    padding: 30px 10px;
-  }
-}
 .doctor-message .inner-lay .numb {
   text-align: center;
   padding: 30px;
@@ -692,6 +686,30 @@ header .nav-link:hover {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  .doctor-message .inner-lay {
+    padding: 20px 10px;
+  }
+  .doctor-message .inner-lay .numb {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px;
+    border-bottom: 1px solid #ccc;
+  }
+  .doctor-message .inner-lay .numb h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-right: 3px;
+    margin-bottom: 5px;
+    border-bottom: 0px solid #ccc;
+    color: #fff;
+  }
+  .doctor-message .inner-lay .numb span {
+    font-size: 20px;
+    color: #21d7d9;
+  }
 }
 
 /* ===================================== Our Blog CSS ================================== */
