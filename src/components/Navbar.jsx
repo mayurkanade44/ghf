@@ -106,7 +106,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/projects"
+                  to="/AboutUs"
                   className="nav-link text-center"
                   onClick={() => {
                     setExpand(false);
