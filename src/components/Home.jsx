@@ -1,6 +1,11 @@
+import a from "../images/slider/slider-1.jpeg";
+import { homeImages } from "./Utils";
+import Carousel from "./Carousel";
+
 const Home = () => {
   return (
     <div>
+      <Carousel a={a} title="Khira Nagar" desc="testing" images={homeImages} />
       <h1 className="text-center">Giving Hope Foundation</h1>
       <h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima
