@@ -49,11 +49,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <section class="mission-vision">
-        <div class="container">
-          <div class="row mission">
-            <div class="col-md-6 mv-det">
-              <h1 class="text-center">Our Mission</h1>
+      <section className="mission-vision">
+        <div className="container">
+          <div className="row mission">
+            <div className="col-md-6 mv-det">
+              <h1 className="text-center">Our Mission</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 neque libero, pulvinar et elementum quis, facilisis eu ante.
@@ -64,16 +64,16 @@ const About = () => {
                 hendrerit ultrices mauris.
               </p>
             </div>
-            <div class="col-md-6 mv-img">
+            <div className="col-md-6 mv-img">
               <img src={mission} alt="mission" />
             </div>
           </div>
-          <div class="row vision flex-column-reverse flex-md-row">
-            <div class="col-md-6 mv-img">
+          <div className="row vision flex-column-reverse flex-md-row">
+            <div className="col-md-6 mv-img">
               <img src={vision} alt="vision" />
             </div>
-            <div class="col-md-6 mv-det">
-              <h1 class="text-center">Our Vision</h1>
+            <div className="col-md-6 mv-det">
+              <h1 className="text-center">Our Vision</h1>
               <p>
                 Ut ultricies lacus a rutrum mollis. Orci varius natoque
                 penatibus et magnis dis parturient montes, nascetur ridiculus
