@@ -1,5 +1,6 @@
 import b from "../images/slider/slider-2.jpeg";
 import c from "../images/slider/slider-3.jpeg";
+import a from "../images/slider/slider-1.jpeg";
 import d from "../images/events/slider-7.jpeg";
 import childIndia from "../images/events/image_08.jpg";
 import childAfrica from "../images/events/image_06.jpg";
@@ -95,17 +96,81 @@ export const team = [
 export const blogs = [
   {
     id: 1,
+    bannerImg: a,
     image: d,
     title: "Kolhapur",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore saepe repellat sit, perspiciatis amet eaque consequuntur libero! Ea commodi Dicta, explicabo odio?",
+    images: [
+      {
+        id: 1,
+        img: d,
+      },
+      {
+        id: 2,
+        img: b,
+      },
+      {
+        id: 3,
+        img: d,
+      },
+      {
+        id: 4,
+        img: d,
+      },
+    ],
   },
   {
     id: 2,
-    image: b,
+    bannerImg: b,
+    image: c,
     title: "Mumabi",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore saepe repellat sit, perspiciatis amet eaque consequuntur libero! Ea commodi Dicta, explicabo odio?",
+    images: [
+      {
+        id: 1,
+        img: d,
+      },
+      {
+        id: 2,
+        img: b,
+      },
+      {
+        id: 3,
+        img: d,
+      },
+      {
+        id: 4,
+        img: d,
+      },
+    ],
   },
   {
     id: 3,
-    image: c,
+
+    bannerImg: c,
     title: "Pune",
+    image: c,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore saepe repellat sit, perspiciatis amet eaque consequuntur libero! Ea commodi Dicta, explicabo odio?",
+    images: [
+      {
+        id: 1,
+        img: d,
+      },
+      {
+        id: 2,
+        img: b,
+      },
+      {
+        id: 3,
+        img: d,
+      },
+      {
+        id: 4,
+        img: d,
+      },
+    ],
   },
 ];

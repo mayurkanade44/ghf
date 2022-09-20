@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { blogs } from "../components/Utils";
 
 const Blog = ({ home }) => {
@@ -24,14 +25,10 @@ const Blog = ({ home }) => {
                 <div className="blog-detail">
                   <h4 className="text-center">{blog.title}</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam justo neque, aliquet sit amet elementum vel, vehicula
-                    eget eros. Vivamus arcu metus, mattis sed sagittis at,
-                    sagittis quis neque. Praesent.
+                    {blog.description.substring(0,200)}...
                   </p>
                   <div className="link">
-                    <a href="blog1.html">Read more </a>
-                    <i className="fas fa-long-arrow-alt-right"></i>
+                    <Link to={`/blog/${blog.id}`}>Read More</Link>
                   </div>
                 </div>
               </div>
