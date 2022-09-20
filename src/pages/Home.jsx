@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <Carousel a={a} title="Khira Nagar" desc="testing" images={homeImages} />
       <About />
-      <Services home="true" />
+      <Services home={true} />
       <div className="doctor-message">
         <div className="inner-lay">
           <div className="container">
@@ -42,7 +42,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Team />
+      <Team home={true} />
     </div>
   );
 };

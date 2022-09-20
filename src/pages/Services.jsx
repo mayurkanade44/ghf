@@ -2,7 +2,7 @@ import { services } from "../components/Utils";
 
 const Services = ({ home }) => {
   let allServices;
-  if (home === "true") {
+  if (home) {
     allServices = services.slice(0, 3);
   } else {
     allServices = services;

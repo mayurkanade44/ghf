@@ -61,18 +61,30 @@ export const team = [
   },
   {
     id: 2,
+    image: woman,
+    name: "Stella Quadros",
+    title: "Co-Founder",
+  },
+  {
+    id: 3,
+    image: woman,
+    name: "Flavian Quadros",
+    title: "Co-Founder",
+  },
+  {
+    id: 4,
     image: manger,
     name: "Sayalee Kudtarkar",
     title: "Volunteer",
   },
   {
-    id: 3,
+    id: 5,
     image: man,
     name: "Mayur Kanade",
     title: "Volunteer",
   },
   {
-    id: 4,
+    id: 6,
     image: woman,
     name: "Aparna Bhere",
     title: "Volunteer",

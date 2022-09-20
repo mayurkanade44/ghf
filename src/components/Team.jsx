@@ -3,7 +3,13 @@ import insta from "../images/social/instagram.png";
 import fb from "../images/social/facebook.png";
 import ln from "../images/social/linkedin.png";
 
-const Team = () => {
+const Team = ({ home }) => {
+  let teams;
+  if (home) {
+    teams = team.slice(0, 4);
+  } else {
+    teams = team;
+  }
   return (
     <section className="bg-04">
       <div className="container">
@@ -14,7 +20,7 @@ const Team = () => {
             </div>
           </div>
           <div className="main-team-card d-flex">
-            {team.map((item) => (
+            {teams.map((item) => (
               <div className="team-setup" key={item.id}>
                 <div className="team-items">
                   <div className="team-user">
