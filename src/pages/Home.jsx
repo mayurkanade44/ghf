@@ -1,6 +1,6 @@
 import a from "../images/slider/slider-1.jpeg";
 import { homeImages } from "../components/Utils";
-import { Carousel, About } from "../components";
+import { Carousel, About, Team } from "../components";
 import Services from "./Services";
 
 const Home = () => {
@@ -42,6 +42,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Team />
     </div>
   );
 };

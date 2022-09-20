@@ -1,9 +1,13 @@
 import b from "../images/slider/slider-2.jpeg";
 import c from "../images/slider/slider-3.jpeg";
-import childIndia from '../images/events/image_08.jpg'
-import childAfrica from '../images/events/image_06.jpg'
-import childMum from '../images/events/image_03.jpg'
-import childDelhi from '../images/events/image_01.jpg'
+import childIndia from "../images/events/image_08.jpg";
+import childAfrica from "../images/events/image_06.jpg";
+import childMum from "../images/events/image_03.jpg";
+import childDelhi from "../images/events/image_01.jpg";
+import stq from "../images/team/1.jpg";
+import man from "../images/team/man.png";
+import woman from "../images/team/woman.png";
+import manger from "../images/team/manager.png";
 
 export const homeImages = [
   {
@@ -19,7 +23,6 @@ export const homeImages = [
     desc: "Worked during 2019 floods",
   },
 ];
-
 
 export const services = [
   {
@@ -46,5 +49,32 @@ export const services = [
     id: 5,
     title: "Child Education India",
     image: childIndia,
+  },
+];
+
+export const team = [
+  {
+    id: 1,
+    image: stq,
+    name: "Stelson Quadros",
+    title: "Founder",
+  },
+  {
+    id: 2,
+    image: manger,
+    name: "Sayalee Kudtarkar",
+    title: "Volunteer",
+  },
+  {
+    id: 3,
+    image: man,
+    name: "Mayur Kanade",
+    title: "Volunteer",
+  },
+  {
+    id: 4,
+    image: woman,
+    name: "Aparna Bhere",
+    title: "Volunteer",
   },
 ];
