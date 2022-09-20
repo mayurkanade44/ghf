@@ -10,6 +10,9 @@ import stq from "../images/team/1.jpg";
 import man from "../images/team/man.png";
 import woman from "../images/team/woman.png";
 import manger from "../images/team/manager.png";
+import insta from "../images/social/instagram.png";
+import fb from "../images/social/facebook.png";
+import ln from "../images/social/linkedin.png";
 
 export const homeImages = [
   {
@@ -23,6 +26,60 @@ export const homeImages = [
     image: c,
     title: "Kolhapur Team",
     desc: "Worked during 2019 floods",
+  },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    image: fb,
+    link: "https://www.facebook.com/Giving-Hope-Foundation-100304929513483/",
+    name: "fb",
+  },
+  {
+    id: 2,
+    image: ln,
+    link: "https://www.linkedin.com/company/giving-hope-foundation-india/about/",
+    name: "linkedin",
+  },
+  {
+    id: 3,
+    image: insta,
+    link: "https://www.instagram.com/givinghope.foundation/",
+    name: "insta",
+  },
+];
+
+export const pageLinks = [
+  {
+    id: 1,
+    name: "Home",
+    link: "/",
+  },
+  {
+    id: 2,
+    name: "About Us",
+    link: "/AboutUs",
+  },
+  {
+    id: 3,
+    name: "Services",
+    link: "/Services",
+  },
+  {
+    id: 4,
+    name: "Gallery",
+    link: "/Gallery",
+  },
+  {
+    id: 5,
+    name: "Blogs",
+    link: "/Blogs",
+  },
+  {
+    id: 6,
+    name: "Contact Us",
+    link: "/ContactUs",
   },
 ];
 

@@ -1,6 +1,6 @@
 import { AboutUs, Blog, Contact, Home, Services, SingleBlog } from "./pages";
-import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Footer, Navbar } from "./components";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route path="/ContactUs" element={<Contact />} />
         <Route path="/blog/:id" element={<SingleBlog />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

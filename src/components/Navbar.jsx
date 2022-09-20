@@ -1,15 +1,14 @@
 import email from "../images/social/email.png";
 import phone from "../images/social/phoneNav.png";
-import insta from "../images/social/instagram.png";
-import fb from "../images/social/facebook.png";
-import ln from "../images/social/linkedin.png";
 import logo from "../images/2.png";
 import menu from "../images/menu.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { pageLinks, socialMedia } from "./Utils";
 
 const Navbar = () => {
   const [expand, setExpand] = useState(false);
+
   return (
     <header className="container-fluid sticky-top">
       <div className="header-top">
@@ -32,37 +31,17 @@ const Navbar = () => {
                 <li className="follow-li">
                   <small>Follow Us :</small>
                 </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/Giving-Hope-Foundation-100304929513483/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={fb} alt="facebook" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/giving-hope-foundation-india/about/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={ln} alt="linkedin" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/givinghope.foundation/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={insta} alt="instagram" />
-                  </a>
-                </li>
+                {socialMedia.map((item) => (
+                  <li key={item.id}>
+                    <a href={item.link} target="_blank" rel="noreferrer">
+                      <img src={item.image} alt={item.name} />
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="col-lg-3 d-none d-md-block col-md-5 d-flex justify-content-center btn-bhed">
-              <Link to='/ContactUs'>
+              <Link to="/ContactUs">
                 <button className="btn btn-sm btn-success">Join Us</button>
               </Link>
               <button className="btn btn-sm btn-default">Donate</button>
@@ -92,73 +71,20 @@ const Navbar = () => {
             id="navbarNav"
           >
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <Link
-                  to="/"
-                  className="nav-link text-center"
-                  aria-current="page"
-                  onClick={() => {
-                    setExpand(false);
-                  }}
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/AboutUs"
-                  className="nav-link text-center"
-                  onClick={() => {
-                    setExpand(false);
-                  }}
-                >
-                  About Us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/Services"
-                  className="nav-link text-center"
-                  onClick={() => {
-                    setExpand(false);
-                  }}
-                >
-                  Services
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/Blogs"
-                  className="nav-link text-center"
-                  onClick={() => {
-                    setExpand(false);
-                  }}
-                >
-                  Gallary
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/Blogs"
-                  className="nav-link text-center"
-                  onClick={() => {
-                    setExpand(false);
-                  }}
-                >
-                  Blog
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/ContactUs"
-                  className="nav-link text-center"
-                  onClick={() => {
-                    setExpand(false);
-                  }}
-                >
-                  Contact Us
-                </Link>
-              </li>
+              {pageLinks.map((item) => (
+                <li className="nav-item" key={item.id}>
+                  <Link
+                    to={item.link}
+                    className="nav-link text-center"
+                    aria-current="page"
+                    onClick={() => {
+                      setExpand(false);
+                    }}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
