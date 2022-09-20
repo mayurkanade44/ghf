@@ -1,5 +1,6 @@
 import b from "../images/slider/slider-2.jpeg";
 import c from "../images/slider/slider-3.jpeg";
+import d from "../images/events/slider-7.jpeg";
 import childIndia from "../images/events/image_08.jpg";
 import childAfrica from "../images/events/image_06.jpg";
 import childMum from "../images/events/image_03.jpg";
@@ -88,5 +89,23 @@ export const team = [
     image: woman,
     name: "Aparna Bhere",
     title: "Volunteer",
+  },
+];
+
+export const blogs = [
+  {
+    id: 1,
+    image: d,
+    title: "Kolhapur",
+  },
+  {
+    id: 2,
+    image: b,
+    title: "Mumabi",
+  },
+  {
+    id: 3,
+    image: c,
+    title: "Pune",
   },
 ];

@@ -128,7 +128,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/about"
+                  to="/Blogs"
                   className="nav-link text-center"
                   onClick={() => {
                     setExpand(false);
@@ -139,7 +139,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/about"
+                  to="/Blogs"
                   className="nav-link text-center"
                   onClick={() => {
                     setExpand(false);

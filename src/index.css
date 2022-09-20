@@ -718,9 +718,9 @@ header .nav-link:hover {
   padding: 20px 30px;
 }
 
-@media screen and (max-width: 967px) {
+@media (max-width: 1023px) {
   .our-blog {
-    padding: 30px 0px;
+    padding: 20px 0px;
   }
 }
 .our-blog .single-blog {
@@ -735,7 +735,7 @@ header .nav-link:hover {
 }
 
 .our-blog .single-blog .blog-detail {
-  padding: 15px;
+  padding: 0px 15px 15px;
 }
 
 .our-blog .single-blog small {

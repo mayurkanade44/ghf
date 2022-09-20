@@ -1,7 +1,7 @@
 import a from "../images/slider/slider-1.jpeg";
 import { homeImages } from "../components/Utils";
 import { Carousel, About, Team } from "../components";
-import Services from "./Services";
+import { Blog, Services } from ".";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
         <div className="inner-lay">
           <div className="container">
             <div className="row session-title">
-              <h2>Our Achievemtns in Numbers</h2>
+              <h2>Our Achievements in Numbers</h2>
               <p>
                 We can talk for a long time about advantages of our Dental
                 clinic before other medical treatment facilities. But you can
@@ -36,13 +36,14 @@ const Home = () => {
               </div>
               <div className="col-sm-3 numb">
                 <h3>48+</h3>
-                <span>FUNT RAISED</span>
+                <span>FUND RAISED</span>
               </div>
             </div>
           </div>
         </div>
       </div>
       <Team home={true} />
+      <Blog home={true} />
     </div>
   );
 };
