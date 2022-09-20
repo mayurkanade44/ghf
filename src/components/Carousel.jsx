@@ -32,9 +32,13 @@ const Carousel = ({ a, title, desc, images }) => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img src={a} className="d-block w-100" alt="a" />
-          <div className="carousel-caption  animate__animated animate__fadeInDownBig">
-            <h1 className="carousel-title ">{title}</h1>
-            <p className="d-none d-md-block">{desc}</p>
+          <div className="carousel-caption">
+            <h1 className="carousel-title animate__animated animate__fadeInRightBig ">
+              {title}
+            </h1>
+            <p className="animate__animated animate__fadeInLeftBig d-none d-md-block">
+              {desc}
+            </p>
           </div>
         </div>
         {images.map((item) => (

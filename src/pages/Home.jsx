@@ -9,10 +9,10 @@ const Home = () => {
       <Carousel a={a} title="Khira Nagar" desc="testing" images={homeImages} />
       <About />
       <Services home="true" />
-      <div class="doctor-message">
-        <div class="inner-lay">
-          <div class="container">
-            <div class="row session-title">
+      <div className="doctor-message">
+        <div className="inner-lay">
+          <div className="container">
+            <div className="row session-title">
               <h2>Our Achievemtns in Numbers</h2>
               <p>
                 We can talk for a long time about advantages of our Dental
@@ -21,20 +21,20 @@ const Home = () => {
                 our clinic:
               </p>
             </div>
-            <div class="row">
-              <div class="col-sm-3 numb">
+            <div className="row">
+              <div className="col-sm-3 numb">
                 <h3>12+</h3>
                 <span>YEARS OF EXPEREANCE</span>
               </div>
-              <div class="col-sm-3 numb">
+              <div className="col-sm-3 numb">
                 <h3>1812+</h3>
                 <span>HAPPY CHILDRENS</span>
               </div>
-              <div class="col-sm-3 numb">
+              <div className="col-sm-3 numb">
                 <h3>52+</h3>
                 <span>EVENTS</span>
               </div>
-              <div class="col-sm-3 numb">
+              <div className="col-sm-3 numb">
                 <h3>48+</h3>
                 <span>FUNT RAISED</span>
               </div>
