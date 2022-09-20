@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { blogs, homeImages } from "../components/Utils";
+import { blogs} from "../components/Utils";
 
 const SingleBlog = () => {
   const { id } = useParams();
   const [main, setMain] = useState({});
-  const [changeb, setChangeb] = useState(false);
+  const [change, setChange] = useState(false);
   const blog = blogs.filter((blog) => blog.id === Number(id));
   useEffect(() => {
     changeImage();
-  }, [changeb]);
+
+    // eslint-disable-next-line
+  }, [change]);
 
   const changeImage = (id) => {
     if (id) {
@@ -20,7 +22,7 @@ const SingleBlog = () => {
       setMain(
         blog.map((blog) => blog.images.filter((image) => image.id === 1))[0][0]
       );
-      setChangeb(true);
+      setChange(true);
     }
   };
 

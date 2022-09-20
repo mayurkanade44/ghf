@@ -19,7 +19,7 @@ const Navbar = () => {
               <ul className="ulleft">
                 <li>
                   <img src={email} className="pb-1 mx-1" alt="email" />
-                  <small>ghf.org.in@gmail.com</small>
+                  <small> ghf.org.in@gmail.com</small>
                 </li>
                 <li>
                   <img src={phone} className="pb-1" alt="phone" />
@@ -62,9 +62,9 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="col-lg-3 d-none d-md-block col-md-5 d-flex justify-content-center btn-bhed">
-              <a href="contact_us.html">
+              <Link to='/ContactUs'>
                 <button className="btn btn-sm btn-success">Join Us</button>
-              </a>
+              </Link>
               <button className="btn btn-sm btn-default">Donate</button>
             </div>
           </div>
@@ -150,13 +150,13 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/contact"
+                  to="/ContactUs"
                   className="nav-link text-center"
                   onClick={() => {
                     setExpand(false);
                   }}
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </li>
             </ul>
