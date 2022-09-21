@@ -150,6 +150,29 @@ export const team = [
   },
 ];
 
+export const gallery = [
+  {
+    id: 1,
+    category: "Kolhapur",
+    image: a,
+  },
+  {
+    id: 2,
+    category: "Mumbai",
+    image: b,
+  },
+  {
+    id: 3,
+    category: "Pune",
+    image: c,
+  },
+  {
+    id: 4,
+    category: "Pune",
+    image: d,
+  },
+];
+
 export const blogs = [
   {
     id: 1,

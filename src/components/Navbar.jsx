@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="container">
           <div className="mobile-nav">
             <Link to="/" className="navbar-brand">
-              <img src={logo} className="logo" alt="Mayur" />
+              <img src={logo} className="logo" alt="logo" />
             </Link>
             <button
               className="navbar-toggler collapsed"
