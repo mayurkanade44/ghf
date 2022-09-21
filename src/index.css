@@ -805,6 +805,9 @@ footer .footer-content ul li {
   text-align: center;
   margin: 5px 10px 0px 0px;
 }
+footer .footer-content ol {
+  padding-left: 15px;
+}
 footer .footer-content ol li {
   padding: 10px 0px 0px 0px;
   position: relative;
@@ -847,6 +850,14 @@ footer .footer-content .form-group i {
   text-align: center;
   top: 0;
   right: 0;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  margin-right: 10px;
+  background-color: cyan;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 @media screen and (max-width: 767.98px) {
