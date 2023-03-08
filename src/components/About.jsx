@@ -1,6 +1,5 @@
-import mission from '../images/misin.jpg'
-import vision from '../images/vision.jpg'
-
+import mission from "../images/education.jpg";
+import vision from "../images/vision.jpg";
 
 const About = () => {
   return (
@@ -55,13 +54,18 @@ const About = () => {
             <div className="col-md-6 mv-det">
               <h1 className="text-center">Our Mission</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                neque libero, pulvinar et elementum quis, facilisis eu ante.
-                Mauris non placerat sapien. Pellentesque tempor arcu non odio
-                scelerisque ullamcorper. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nam varius eros consequat auctor gravida. Fusce
-                tristique lacus at urna sollicitudin pulvinar. Suspendisse
-                hendrerit ultrices mauris.
+                <b>Education</b> is a fundamental human right, but
+                unfortunately, not everyone has access to quality education.
+                This is especially true for students in underprivileged
+                communities who lack the resources necessary to receive a proper
+                education. Student education charities aim to bridge this gap by
+                providing students with the necessary support to achieve their
+                academic potential. <br />
+                One of the most significant benefits of student education
+                charities is that they can provide access to resources that many
+                students may not have otherwise., These charities often provide
+                students with mentorship and guidance, which can be invaluable
+                in helping them navigate the challenges of academic life.
               </p>
             </div>
             <div className="col-md-6 mv-img">
