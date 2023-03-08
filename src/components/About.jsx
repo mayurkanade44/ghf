@@ -68,12 +68,12 @@ const About = () => {
                 in helping them navigate the challenges of academic life.
               </p>
             </div>
-            <div className="col-md-6 mv-img">
+            <div className="col-md-6 d-flex align-items-center">
               <img src={mission} alt="mission" />
             </div>
           </div>
           <div className="row vision flex-column-reverse flex-md-row">
-            <div className="col-md-6 mv-img">
+            <div className="col-md-6 d-flex align-items-center">
               <img src={vision} alt="vision" />
             </div>
             <div className="col-md-6 mv-det">
