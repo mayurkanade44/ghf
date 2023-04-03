@@ -63,8 +63,8 @@ export const pageLinks = [
   },
   {
     id: 3,
-    name: "Services",
-    link: "/Services",
+    name: "Projects",
+    link: "/projects",
   },
   {
     id: 4,
@@ -86,28 +86,48 @@ export const pageLinks = [
 export const services = [
   {
     id: 1,
-    title: "Child Education India",
+    title: "EPCORN",
     image: childIndia,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+    raised: "100",
+    total: "10,000",
+    projects: [
+      {
+        id: 1,
+        name: "Kolhapur Flood",
+        image: childIndia,
+        description: "",
+      },
+    ],
   },
   {
     id: 2,
-    title: "Child Education Africa",
+    title: "SARS",
     image: childAfrica,
+    raised: "500",
+    total: "50,000",
   },
   {
     id: 3,
-    title: "Child Education Mumbai",
+    title: "Shanti Dham",
     image: childMum,
+    raised: "1000",
+    total: "50,000",
   },
   {
     id: 4,
-    title: "Child Education Delhi",
+    title: "Sport Support",
     image: childDelhi,
+    raised: "5000",
+    total: "10,000",
   },
   {
     id: 5,
-    title: "Child Education India",
+    title: "Seva",
     image: childIndia,
+    raised: "10000",
+    total: "1,00,000",
   },
 ];
 
@@ -252,5 +272,12 @@ export const blogs = [
         img: d,
       },
     ],
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "EPCRON",
   },
 ];

@@ -1,17 +1,24 @@
+import { useEffect } from "react";
 import { services } from "../components/Utils";
+import { Link } from "react-router-dom";
 
-const Services = ({ home }) => {
+const Projects = ({ home }) => {
   let allServices;
   if (home) {
     allServices = services.slice(0, 3);
   } else {
     allServices = services;
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="events">
       <div className="container">
         <div className="session-title row">
-          <h2>Popular Causes</h2>
+          <h2>Our Projects</h2>
           <p>
             We are a non-profital &amp; Charity raising money for child
             education
@@ -24,12 +31,18 @@ const Services = ({ home }) => {
                 <img src={item.image} alt="" />
                 <h4>{item.title}</h4>
                 <p className="raises">
-                  <span>Raised : $34,425</span> / $500,000
+                  <span>Raised : ₹{item.raised}</span> / ₹{item.total}
                 </p>
                 <p className="desic">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                 </p>
+                <Link
+                  to={`/projects/${item.title}`}
+                  className="btn btn-dark btn-sm me-2"
+                >
+                  Know More
+                </Link>
                 <button className="btn btn-success btn-sm">Donate Now</button>
               </div>
             </div>
@@ -39,4 +52,4 @@ const Services = ({ home }) => {
     </section>
   );
 };
-export default Services;
+export default Projects;

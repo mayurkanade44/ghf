@@ -76,6 +76,7 @@ const Navbar = () => {
                   <Link
                     to={item.link}
                     className="nav-link text-center"
+                    
                     aria-current="page"
                     onClick={() => {
                       setExpand(false);

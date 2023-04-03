@@ -1,9 +1,15 @@
+import { useEffect } from "react";
 import build from "../images/social/building.gif";
 import phone from "../images/social/fax.gif";
 import web from "../images/social/globe.gif";
 import email from "../images/social/message.gif";
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="row contact-rooo no-margin">
       <div className="container">

@@ -1,4 +1,13 @@
-import { AboutUs, Blog, Contact, Gallery, Home, Services, SingleBlog } from "./pages";
+import {
+  AboutUs,
+  Blog,
+  Contact,
+  Gallery,
+  Home,
+  Projects,
+  SingleBlog,
+  SingleProject,
+} from "./pages";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components";
 
@@ -9,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/Services" element={<Services />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Projects/:name" element={<SingleProject />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Blogs" element={<Blog />} />
         <Route path="/ContactUs" element={<Contact />} />

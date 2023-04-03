@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { gallery } from "../components/Utils";
 const allCategories = ["All", ...new Set(gallery.map((item) => item.category))];
 
 const Gallery = () => {
   const [images, setImages] = useState(gallery);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const filterImages = (category) => {
     if (category === "All") {

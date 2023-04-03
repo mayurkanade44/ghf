@@ -1,14 +1,19 @@
 import a from "../images/slider/slider-1.jpeg";
 import { homeImages } from "../components/Utils";
 import { Carousel, About, Team } from "../components";
-import { Blog, Services } from ".";
+import { Blog, Projects } from ".";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Carousel a={a} title="Khira Nagar" desc="testing" images={homeImages} />
       <About />
-      <Services home={true} />
+      <Projects home={true} />
       <div className="doctor-message">
         <div className="inner-lay">
           <div className="container">

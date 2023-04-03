@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { blogs } from "../components/Utils";
+import { useEffect } from "react";
 
 const Blog = ({ home }) => {
   let allBlogs;
@@ -8,6 +9,11 @@ const Blog = ({ home }) => {
   } else {
     allBlogs = blogs;
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="our-blog">
       <div className="container">
@@ -24,9 +30,7 @@ const Blog = ({ home }) => {
                 </figure>
                 <div className="blog-detail">
                   <h4 className="text-center">{blog.title}</h4>
-                  <p>
-                    {blog.description.substring(0,200)}...
-                  </p>
+                  <p>{blog.description.substring(0, 200)}...</p>
                   <div className="link">
                     <Link to={`/blog/${blog.id}`}>Read More</Link>
                   </div>
