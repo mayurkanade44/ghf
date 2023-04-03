@@ -629,6 +629,17 @@ header .nav-link:hover {
   margin-bottom: 15px;
 }
 
+.proj-img {
+  width: auto;
+  height: 132px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.proj-img img {
+  
+}
+
 @media (max-width: 767px) {
   .events {
     padding: 15px 10px;
@@ -765,7 +776,7 @@ header .nav-link:hover {
   color: #ffffff;
 }
 
-/* ===================================== Fooer CSS ================================== */
+/* ===================================== Footer CSS ================================== */
 
 footer {
   position: relative;

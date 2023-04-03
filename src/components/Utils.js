@@ -13,6 +13,11 @@ import manger from "../images/team/manager.png";
 import insta from "../images/social/instagram.png";
 import fb from "../images/social/facebook.png";
 import ln from "../images/social/linkedin.png";
+import epcorn from "../images/Epcorn.jpg";
+import shanti from "../images/Shanti1.jpg";
+import sports from "../images/sports.jpg";
+import sars from "../images/sars.png";
+import seva from "../images/seva.jpg";
 
 export const homeImages = [
   {
@@ -87,7 +92,7 @@ export const services = [
   {
     id: 1,
     title: "EPCORN",
-    image: childIndia,
+    image: epcorn,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
     raised: "100",
@@ -95,37 +100,57 @@ export const services = [
     projects: [
       {
         id: 1,
-        name: "Kolhapur Flood",
-        image: childIndia,
-        description: "",
+        bannerImg: a,
+        image: d,
+        name: "Kolhapur Floods",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore saepe repellat sit, perspiciatis amet eaque consequuntur libero! Ea commodi Dicta, explicabo odio?",
+        images: [
+          {
+            id: 1,
+            img: d,
+          },
+          {
+            id: 2,
+            img: b,
+          },
+          {
+            id: 3,
+            img: d,
+          },
+          {
+            id: 4,
+            img: d,
+          },
+        ],
       },
     ],
   },
   {
     id: 2,
     title: "SARS",
-    image: childAfrica,
+    image: sars,
     raised: "500",
     total: "50,000",
   },
   {
     id: 3,
     title: "Shanti Dham",
-    image: childMum,
+    image: shanti,
     raised: "1000",
     total: "50,000",
   },
   {
     id: 4,
     title: "Sport Support",
-    image: childDelhi,
+    image: sports,
     raised: "5000",
     total: "10,000",
   },
   {
     id: 5,
     title: "Seva",
-    image: childIndia,
+    image: seva,
     raised: "10000",
     total: "1,00,000",
   },

@@ -28,7 +28,7 @@ const Projects = ({ home }) => {
           {allServices.map((item) => (
             <div className="col-md-4 col-sm-6" key={item.id}>
               <div className="event-box">
-                <img src={item.image} alt="" />
+                <img src={item.image} alt="" style={{width:450}} />
                 <h4>{item.title}</h4>
                 <p className="raises">
                   <span>Raised : ₹{item.raised}</span> / ₹{item.total}

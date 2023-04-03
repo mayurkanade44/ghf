@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { services } from "../components/Utils";
 import { useEffect, useState } from "react";
 
@@ -11,7 +11,7 @@ const SingleProject = () => {
   }, []);
 
   return (
-    <section className="events">
+    <section className="our-blog">
       <div className="container">
         {project?.map((item) => (
           <div key={item.id}>
@@ -22,19 +22,17 @@ const SingleProject = () => {
             <div className="event-ro row">
               {item.projects?.map((item) => (
                 <div className="col-md-4 col-sm-6" key={item.id}>
-                  <div className="event-box">
-                    <img src={item.image} alt="" />
-                    <h4>{item.name}</h4>
-                    <p className="raises">
-                      <span>Raised : ₹{item.raised}</span> / ₹{item.total}
-                    </p>
-                    <p className="desic">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                    </p>
-                    <button className="btn btn-dark btn-sm me-2">
-                      Know More
-                    </button>
+                  <div className="single-blog">
+                    <figure>
+                      <img src={item.image} alt={item.name} />
+                    </figure>
+                    <div className="blog-detail">
+                      <h4 className="text-center">{item.name}</h4>
+                      <p>{item.description.substring(0, 200)}...</p>
+                      <div className="link">
+                        <Link to={`/blog/${item.id}`}>Read More</Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}

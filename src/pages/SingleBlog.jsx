@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { blogs} from "../components/Utils";
+import { blogs } from "../components/Utils";
 
 const SingleBlog = () => {
   const { id } = useParams();
@@ -41,8 +41,7 @@ const SingleBlog = () => {
                       return (
                         <img
                           key={index}
-                          className="border border-dark border-1"
-                          style={{ height: 132 }}
+                          className="proj-img border border-dark"
                           src={image.img}
                           alt="name"
                           onClick={() => changeImage(image.id)}
