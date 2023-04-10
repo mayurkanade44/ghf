@@ -1,6 +1,5 @@
 import {
   AboutUs,
-  Blog,
   Contact,
   Gallery,
   Home,
@@ -24,7 +23,7 @@ function App() {
         <Route path="/Timeline" element={<Timeline />} />
         <Route path="/ContactUs" element={<Contact />} />
         <Route path="/Projects/:name" element={<SingleProject />} />
-        <Route path="/Project/blog/:id" element={<SingleBlog />} />
+        <Route path="/Project/:name/:id" element={<SingleBlog />} />
       </Routes>
       <Footer />
     </Router>

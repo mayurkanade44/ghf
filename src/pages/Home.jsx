@@ -1,7 +1,7 @@
 import a from "../images/slider/slider-1.jpeg";
 import { homeImages } from "../components/Utils";
 import { Carousel, About, Team } from "../components";
-import { Blog, Projects } from ".";
+import { Projects } from ".";
 import { useEffect } from "react";
 
 const Home = () => {

@@ -1,7 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { services } from "../components/Utils";
 import { useEffect, useState } from "react";
-import SingleBlog from "./SingleBlog";
 
 const SingleProject = () => {
   const { name } = useParams();
@@ -21,17 +20,17 @@ const SingleProject = () => {
               <p>{item.description}</p>
             </div>
             <div className="event-ro row">
-              {item.projects?.map((item) => (
-                <div className="col-md-4 col-sm-6" key={item.id}>
+              {item.projects?.map((proj) => (
+                <div className="col-md-4 col-sm-6" key={proj.id}>
                   <div className="single-blog">
                     <figure>
-                      <img src={item.image} alt={item.name} />
+                      <img src={proj.image} alt={proj.name} />
                     </figure>
                     <div className="blog-detail">
-                      <h4 className="text-center">{item.name}</h4>
-                      <p>{item.description.substring(0, 200)}...</p>
+                      <h4 className="text-center">{proj.name}</h4>
+                      <p>{proj.description.substring(0, 200)}...</p>
                       <div className="link">
-                        <Link to={`/Project/Blog/${item.id}`}>Read More</Link>
+                        <Link to={`/Project/${item.title}/${proj.id}`}>Read More</Link>
                       </div>
                     </div>
                   </div>

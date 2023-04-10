@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { blogs, services } from "../components/Utils";
+import { services } from "../components/Utils";
 
-const SingleBlog = ({title}) => {
-  const { id } = useParams();
+const SingleBlog = () => {
+  const { name, id } = useParams();
   const [main, setMain] = useState({});
   const [change, setChange] = useState(false);
-  const blog = blogs.filter((blog) => blog.id === Number(id))
-
-  console.log(title);
+  const blog = services
+    .filter((proj) => proj.title === name)[0]
+    .projects.filter((item) => item.id === Number(id));
 
   useEffect(() => {
     changeImage();
@@ -33,7 +33,7 @@ const SingleBlog = ({title}) => {
     <div className="container">
       {blog?.map((blog) => (
         <div key={blog.id}>
-          <h1 className="text-center py-3">{blog.title}</h1>
+          <h1 className="text-center py-3">{blog.name}</h1>
           <img src={blog.bannerImg} alt="" />
           <div className="row mission p-4 flex-column-reverse flex-md-row">
             <div className="col-md-6 mv-img">

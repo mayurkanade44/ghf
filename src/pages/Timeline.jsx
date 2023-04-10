@@ -11,7 +11,7 @@ const Timeline = () => {
         <div className="main-timeline-2">
           {timeline.map((item) =>
             item.id % 2 === 1 ? (
-              <div className="timeline-2 left-2">
+              <div key={item.id} className="timeline-2 left-2">
                 <div className="card gradient-custom">
                   <div className="card-body p-4">
                     <h4 className="fw-bold mb-2 gradient-custom-h4">
@@ -26,7 +26,7 @@ const Timeline = () => {
                 </div>
               </div>
             ) : (
-              <div className="timeline-2 right-2">
+              <div key={item.id} className="timeline-2 right-2">
                 <div className="card gradient-custom1">
                   <div className="card-body p-4">
                     <h4 className="fw-bold mb-2 gradient-custom-h4">
