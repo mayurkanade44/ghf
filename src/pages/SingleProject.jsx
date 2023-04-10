@@ -1,14 +1,15 @@
 import { Link, useParams } from "react-router-dom";
 import { services } from "../components/Utils";
 import { useEffect, useState } from "react";
+import SingleBlog from "./SingleBlog";
 
 const SingleProject = () => {
   const { name } = useParams();
   const [project, setProject] = useState(null);
 
   useEffect(() => {
-    setProject(services?.filter((item) => item.title === "EPCORN"));
-  }, []);
+    setProject(services?.filter((item) => item.title === name));
+  }, [name]);
 
   return (
     <section className="our-blog">
@@ -30,7 +31,7 @@ const SingleProject = () => {
                       <h4 className="text-center">{item.name}</h4>
                       <p>{item.description.substring(0, 200)}...</p>
                       <div className="link">
-                        <Link to={`/blog/${item.id}`}>Read More</Link>
+                        <Link to={`/Project/Blog/${item.id}`}>Read More</Link>
                       </div>
                     </div>
                   </div>

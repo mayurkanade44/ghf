@@ -21,9 +21,8 @@ function App() {
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Projects/:name" element={<SingleProject />} />
         <Route path="/Gallery" element={<Gallery />} />
-        <Route path="/Blogs" element={<Blog />} />
         <Route path="/ContactUs" element={<Contact />} />
-        <Route path="/blog/:id" element={<SingleBlog />} />
+        <Route path="/Project/blog/:id" element={<SingleBlog />} />
       </Routes>
       <Footer />
     </Router>

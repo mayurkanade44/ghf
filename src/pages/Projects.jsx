@@ -38,7 +38,7 @@ const Projects = ({ home }) => {
                   typesetting industry. Lorem Ipsum has been the industry's
                 </p>
                 <Link
-                  to={`/projects/${item.title}`}
+                  to={`/Projects/${item.title}`}
                   className="btn btn-dark btn-sm me-2"
                 >
                   Know More

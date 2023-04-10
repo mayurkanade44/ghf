@@ -48,7 +48,6 @@ const Home = () => {
         </div>
       </div>
       <Team home={true} />
-      <Blog home={true} />
     </div>
   );
 };

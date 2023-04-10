@@ -69,7 +69,7 @@ export const pageLinks = [
   {
     id: 3,
     name: "Projects",
-    link: "/projects",
+    link: "/Projects",
   },
   {
     id: 4,
@@ -78,7 +78,7 @@ export const pageLinks = [
   },
   {
     id: 5,
-    name: "Blogs",
+    name: "Timeline",
     link: "/Blogs",
   },
   {
@@ -132,6 +132,36 @@ export const services = [
     image: sars,
     raised: "500",
     total: "50,000",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+    projects: [
+      {
+        id: 1,
+        bannerImg: a,
+        image: d,
+        name: "Kolhapur Floods",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore saepe repellat sit, perspiciatis amet eaque consequuntur libero! Ea commodi Dicta, explicabo odio?",
+        images: [
+          {
+            id: 1,
+            img: d,
+          },
+          {
+            id: 2,
+            img: b,
+          },
+          {
+            id: 3,
+            img: d,
+          },
+          {
+            id: 4,
+            img: d,
+          },
+        ],
+      },
+    ],
   },
   {
     id: 3,
