@@ -2,10 +2,10 @@ import { timeline } from "../components/Utils";
 
 const Timeline = () => {
   return (
-    <section>
+    <section className="timeline">
       <div className="container py-4">
-        <div className="session-title row">
-          <h2>Our Timeline</h2>
+        <div className="session-title row pt-2">
+          <h1 className="text-center">Our Timeline</h1>
           <p></p>
         </div>
         <div className="main-timeline-2">

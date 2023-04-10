@@ -637,7 +637,6 @@ header .nav-link:hover {
 }
 
 .proj-img img {
-  
 }
 
 @media (max-width: 767px) {
@@ -1111,7 +1110,7 @@ footer .footer-content .form-group i {
 .gallery {
   padding: 50px;
   padding: 30px;
-  background-color: #fff;
+  background-color: #edf1f5;
 }
 @media screen and (max-width: 1023px) {
   .gallery {
@@ -1225,10 +1224,14 @@ footer .footer-content .form-group i {
   }
 }
 
-
 /* ===================================== TImeline  ================================== */
 
 /* The actual timeline (the vertical ruler) */
+
+.timeline {
+  background-color: #edf1f5;
+}
+
 .main-timeline-2 {
   position: relative;
 }
@@ -1299,7 +1302,6 @@ footer .footer-content .form-group i {
   border: medium solid rgba(245, 87, 108, 1);
   border-width: 10px 10px 10px 0;
   border-color: transparent rgba(245, 87, 108, 1) transparent transparent;
-
 }
 
 /* Fix the circle for containers on the right side */
@@ -1308,7 +1310,7 @@ footer .footer-content .form-group i {
 }
 
 .gradient-custom {
-   background: linear-gradient(
+  background: linear-gradient(
     to right,
     rgba(106, 17, 203, 1),
     rgba(37, 117, 252, 1)
@@ -1316,7 +1318,7 @@ footer .footer-content .form-group i {
 }
 
 .gradient-custom1 {
-   background: linear-gradient(
+  background: linear-gradient(
     to left,
     rgba(240, 147, 251, 1),
     rgba(245, 87, 108, 1)

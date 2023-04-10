@@ -5,15 +5,14 @@ import web from "../images/social/globe.gif";
 import email from "../images/social/message.gif";
 
 const Contact = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="row contact-rooo no-margin">
-      <div className="container">
-        <h2 className="text-center my-3">Contact Us</h2>
+    <div className="row no-margin">
+      <div className="container pt-3">
+        <h1 className="text-center my-3">Contact Us</h1>
         <div className="row flex-column-reverse flex-md-row">
           <div style={{ padding: 20 }} className="col-md-6">
             <div className="row cont-row">

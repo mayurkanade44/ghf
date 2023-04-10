@@ -22,7 +22,7 @@ const Gallery = () => {
     <div className="gallery">
       <div className="container">
         <div className="row">
-          <h1 className="gallery-title">Photos</h1>
+          <h1 className="text-center mb-3">Photos</h1>
           <div className="gallery-filter">
             {allCategories.map((item) => (
               <button

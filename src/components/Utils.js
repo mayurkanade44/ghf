@@ -228,22 +228,27 @@ export const team = [
 export const gallery = [
   {
     id: 1,
-    category: "Kolhapur",
+    category: "EPCRON",
     image: a,
   },
   {
     id: 2,
-    category: "Mumbai",
+    category: "SARS",
     image: b,
   },
   {
     id: 3,
-    category: "Pune",
+    category: "Shanti Dham",
     image: c,
   },
   {
     id: 4,
-    category: "Pune",
+    category: "Sport Support",
+    image: d,
+  },
+  {
+    id: 5,
+    category: "Seva",
     image: d,
   },
 ];

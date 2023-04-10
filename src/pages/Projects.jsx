@@ -18,7 +18,7 @@ const Projects = ({ home }) => {
     <section className="events">
       <div className="container">
         <div className="session-title row">
-          <h2>Our Projects</h2>
+          <h1 className="text-center">Our Projects</h1>
           <p>
             We are a non-profital &amp; Charity raising money for child
             education
