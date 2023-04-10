@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <div className="row contact-rooo no-margin">
       <div className="container">
-        <h2 className="text-center my-3">Contact US</h2>
+        <h2 className="text-center my-3">Contact Us</h2>
         <div className="row flex-column-reverse flex-md-row">
           <div style={{ padding: 20 }} className="col-md-6">
             <div className="row cont-row">

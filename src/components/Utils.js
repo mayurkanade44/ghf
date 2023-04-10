@@ -79,7 +79,7 @@ export const pageLinks = [
   {
     id: 5,
     name: "Timeline",
-    link: "/Blogs",
+    link: "/Timeline",
   },
   {
     id: 6,
@@ -330,9 +330,37 @@ export const blogs = [
   },
 ];
 
-export const projects = [
+export const timeline = [
   {
     id: 1,
-    title: "EPCRON",
+    title: "Test 1",
+    date: "2019",
+    img: childIndia,
+    description:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    id: 2,
+    title: "Test 2",
+    date: "2020",
+    img: childDelhi,
+    description:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    id: 3,
+    title: "Test 3",
+    date: "2021",
+    img: childAfrica,
+    description:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    id: 4,
+    title: "Test 4",
+    date: "2022",
+    img: childIndia,
+    description:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
 ];

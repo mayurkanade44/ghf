@@ -7,6 +7,7 @@ import {
   Projects,
   SingleBlog,
   SingleProject,
+  Timeline,
 } from "./pages";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components";
@@ -19,9 +20,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Projects" element={<Projects />} />
-        <Route path="/Projects/:name" element={<SingleProject />} />
         <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/Timeline" element={<Timeline />} />
         <Route path="/ContactUs" element={<Contact />} />
+        <Route path="/Projects/:name" element={<SingleProject />} />
         <Route path="/Project/blog/:id" element={<SingleBlog />} />
       </Routes>
       <Footer />
