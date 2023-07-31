@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div>
-      <Carousel a={a} title="Khira Nagar" desc="testing" images={homeImages} />
+      <Carousel a={a} title="Khira Nagar" desc="" images={homeImages} />
       <About />
       <Projects home={true} />
       <div className="doctor-message">

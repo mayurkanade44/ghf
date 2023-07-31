@@ -15,9 +15,9 @@ const SingleProject = () => {
       <div className="container">
         {project?.map((item) => (
           <div key={item.id}>
-            <div className="session-title row">
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
+            <div className="row">
+              <h2 className="text-center text-primary">{item.title}</h2>
+              <p className="mb-3">{item.description}</p>
             </div>
             <div className="event-ro row">
               {item.projects?.map((proj) => (
@@ -30,7 +30,9 @@ const SingleProject = () => {
                       <h4 className="text-center">{proj.name}</h4>
                       <p>{proj.description.substring(0, 200)}...</p>
                       <div className="link">
-                        <Link to={`/Project/${item.title}/${proj.id}`}>Read More</Link>
+                        <Link to={`/Project/${item.title}/${proj.id}`}>
+                          Read More
+                        </Link>
                       </div>
                     </div>
                   </div>

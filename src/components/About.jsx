@@ -65,27 +65,39 @@ const About = () => {
                 charities is that they can provide access to resources that many
                 students may not have otherwise., These charities often provide
                 students with mentorship and guidance, which can be invaluable
-                in helping them navigate the challenges of academic life.
+                in helping them navigate the challenges of academic life. <br />
+                Education remains a cornerstone of our mission, promoting access
+                to quality education for all, regardless of social or economic
+                standing. Additionally, we recognize the importance of spiritual
+                learning and healing in cultivating inner strength, resilience,
+                and emotional well-being
               </p>
             </div>
             <div className="col-md-6 d-flex align-items-center">
-              <img src={mission} alt="mission" />
+              <img src={mission} alt="mission" style={{ height: 400 }} />
             </div>
           </div>
           <div className="row vision flex-column-reverse flex-md-row">
             <div className="col-md-6 d-flex align-items-center">
-              <img src={vision} alt="vision" />
+              <img src={vision} alt="vision" style={{ height: 400 }} />
             </div>
             <div className="col-md-6 mv-det">
               <h1 className="text-center">Our Vision</h1>
               <p>
-                Ut ultricies lacus a rutrum mollis. Orci varius natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Sed porta dolor quis felis pulvinar dignissim. Etiam nisl
-                ligula, ullamcorper non metus vitae, maximus efficitur mi.
-                Vivamus ut ex ullamcorper, scelerisque lacus nec, commodo dui.
-                Proin massa urna, volutpat vel augue eget, iaculis tristique
-                dui.
+                Our vision is to create a world where hope thrives, empowering
+                individuals and communities to build brighter futures. We pledge
+                to remain dedicated to our mission, striving to make a lasting
+                impact on lives, one step at a time. <br /> At Giving Hope
+                Foundation, our broader outlook over our vision is to create a
+                world where every individual, regardless of their background,
+                has access to opportunities that foster holistic growth and
+                empowerment. We aspire to uplift communities through sustainable
+                development, nurturing the potential of children, empowering
+                women, generating employment opportunities, promoting education,
+                providing medical aid, promoting research and facilitating
+                spiritual learning and healing. We envision vibrant communities
+                where people are equipped with the knowledge, skills, and
+                resources needed to thrive and contribute positively to society.
               </p>
             </div>
           </div>

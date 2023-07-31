@@ -65,6 +65,10 @@ const SingleBlog = () => {
             </div>
             <div className="col-md-6 mv-det">
               <p>{blog.description}</p>
+              <br />
+              <p>
+                <b>{blog.boldDesc}</b>
+              </p>
             </div>
           </div>
         </div>
