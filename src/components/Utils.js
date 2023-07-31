@@ -18,6 +18,7 @@ import sports from "../images/sports.jpg";
 import sars from "../images/sars.png";
 import seva from "../images/seva.jpg";
 import skill from "../images/skill india.jpeg";
+import smart from "../images/smart.jpg";
 
 export const homeImages = [
   {
@@ -230,6 +231,15 @@ Disinfecting, played a major role in ensuring many lives were saved while collec
     description:
       "A collaborative project, open fund, working towards skill development with youth from different cities of INDIA, training them to achieve employability in semi skilled sectors like maintenance, engineering, house keeping, horticulture, food & beverage, hospitality. Under “SKILL INDIA”, GHF is always open to collaborate and work with multiple universities and colleges to promote professional driven training so as to bring in a systematic approach to skill learning promoting institutional participation.",
   },
+  {
+    id: 7,
+    title: "Smart Connect",
+    image: smart,
+    raised: "5000",
+    total: "5,00,000",
+    description:
+      "An open fund project towards bringing together businesses and stake holders of the pest control industry in a participatory mode, to promote sharing technical progresses, industry challenges, global policies affecting pest control industry, need for advocacy in India, promote new technologies.",
+  },
 ];
 
 export const team = [
@@ -274,7 +284,7 @@ export const team = [
 export const gallery = [
   {
     id: 1,
-    category: "EPCRON",
+    category: "EPCORN",
     image: a,
   },
   {
@@ -296,6 +306,14 @@ export const gallery = [
     id: 5,
     category: "Seva",
     image: d,
+  },
+  {
+    id: 6,
+    category: "Skill India",
+  },
+  {
+    id: 7,
+    category: "Smart Connect",
   },
 ];
 
