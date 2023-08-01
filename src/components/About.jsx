@@ -1,4 +1,4 @@
-import mission from "../images/education.jpg";
+import mission from "../images/mission.jpg";
 import vision from "../images/vision.jpg";
 
 const About = () => {
@@ -70,7 +70,7 @@ const About = () => {
                 to quality education for all, regardless of social or economic
                 standing. Additionally, we recognize the importance of spiritual
                 learning and healing in cultivating inner strength, resilience,
-                and emotional well-being
+                and emotional well-being.
               </p>
             </div>
             <div className="col-md-6 d-flex align-items-center">
